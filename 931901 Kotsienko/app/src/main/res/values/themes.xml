@@ -1,0 +1,118 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.WordsFactory" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@android:color/white</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@android:color/white</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <!-- Others. -->
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <!-- Display text styles. -->
+    <style name="WordsFactory.Display" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/rubik_bold</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+    <style name="WordsFactory.Display2" parent="WordsFactory.Display">
+        <item name="android:textSize">40sp</item>
+    </style>
+    <!-- Heading text styles. -->
+    <style name="WordsFactory.Heading" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+    <style name="WordsFactory.Heading1" parent="WordsFactory.Heading">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="WordsFactory.Heading2" parent="WordsFactory.Heading">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- Paragraph text styles. -->
+    <style name="WordsFactory.Paragraph" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+    <style name="WordsFactory.Paragraph1" parent="WordsFactory.Paragraph">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- Custom components styles. -->
+    <style name="Widget.WordsFactory.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:lineHeight">16dp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:layout_width">45dp</item>
+    </style>
+    <style name="Widget.WordsFactory.TextButton.Center" parent="Widget.WordsFactory.TextButton">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">60dp</item>
+    </style>
+    <style name="Widget.WordsFactory.TextButton.Right" parent="Widget.WordsFactory.TextButton">
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+    <style name="Widget.WordsFactory.Button" parent="Widget.Material3.Button">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:lineHeight">18dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingVertical">16dp</item>
+        <item name="android:paddingHorizontal">32sp</item>
+    </style>
+    <style name="Widget.WordsFactory.FloatingActionButton" parent="android:Widget">
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="backgroundTint">@color/gray</item>
+        <item name="borderWidth">1.5dp</item>
+        <item name="tint">@color/dark</item>
+        <item name="elevation">0dp</item>
+    </style>
+    <style name="Widget.WordsFactory.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="colorOnBackground">@color/primary</item>
+        <item name="background">@null</item>
+    </style>
+    <style name="Widget.WordsFactory.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="hintTextColor">@color/dark_gray</item>
+    </style>
+    <style name="Widget.WordsFactory.TextInputLayout.Password" parent="Widget.WordsFactory.TextInputLayout">
+        <item name="passwordToggleEnabled">true</item>
+        <item name="passwordToggleDrawable">@drawable/password_input_toggle</item>
+    </style>
+    <style name="Widget.WordsFactory.TextInputLayout.Search" parent="Widget.WordsFactory.TextInputLayout">
+        <item name="endIconMode">custom</item>
+        <item name="endIconDrawable">@drawable/icon_search</item>
+    </style>
+    <style name="Widget.WordsFactory.PageIndicator" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicator">@null</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabGravity">center</item>
+        <item name="tabBackground">@drawable/tab_selector</item>
+    </style>
+    <style name="Widget.WordsFactory.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicator">@null</item>
+        <item name="android:background">@drawable/tab_layout_background</item>
+        <item name="tabTextAppearance">@style/WordsFactory.Paragraph1</item>
+    </style>
+</resources>
